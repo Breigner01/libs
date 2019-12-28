@@ -10,13 +10,15 @@
 
 #include <stddef.h>
 #include <stdint.h>
-#include <stdlib.h>
 #include <inttypes.h>
 #define ATN(c) (c - '0')
 #define NTA(n) (n + '0')
 
+void my_putchar(char);
 int my_isneg(int);
+int my_put_nbr(int);
 void my_swap(int *, int *);
+int my_putstr(char const *);
 int my_strlen(char const *);
 int my_getnbr(char const *);
 void my_sort_int_array(int *, int);
@@ -46,9 +48,6 @@ char *my_strdup(char const *);
 void *my_memset(void *, int, size_t);
 
 // my_printf
-void my_putchar(char);
-int my_putstr(char const *);
-int my_put_nbr(int);
 void my_put_binary(uint64_t);
 void my_put_hexa_maj(uint64_t);
 void my_put_hexa_min(uint64_t);
