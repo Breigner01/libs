@@ -84,3 +84,5 @@ fclean: clean
 	make fclean -C lib/my/
 
 re: fclean all
+
+.PHONY: all tests_run debug clean fclean re

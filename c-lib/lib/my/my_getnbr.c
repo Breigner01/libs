@@ -21,7 +21,8 @@ int my_getnbr(char const *str)
             j = j * 10;
             j = j + str[i] - '0';
             i++;
-        }
+        } else
+            break;
     }
     return (j * k);
 }
