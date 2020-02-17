@@ -15,7 +15,7 @@ void redirect_all_stdout(void)
     cr_redirect_stderr();
 }
 
-TestSuite(my_printf, .init=redirect_all_stdout, .timeout=0.02);
+TestSuite(my_printf, .init=redirect_all_stdout, .timeout=0.05);
 
 Test (my_printf, prints_int_i)
 {

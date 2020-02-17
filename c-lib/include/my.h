@@ -10,6 +10,7 @@
 
 #include <stddef.h>
 #include <stdint.h>
+#include <stdio.h>
 #include <inttypes.h>
 #define ATN(c) (c - '0')
 #define NTA(n) (n + '0')
@@ -46,8 +47,14 @@ char *my_strcat(char *, char const *);
 char *my_strncat(char *, char const *, int);
 char *my_strdup(char const *);
 void *my_memset(void *, int, size_t);
+char **my_str_to_word_array(char const *);
+char **my_strtok(char const *str, char delim);
+void *my_calloc(int mem, size_t size);
+void *my_memset(void *ptr, int mem, size_t size);
 
 // my_printf
+int my_printf(char *, ...);
+void my_puterr(char const *);
 void my_put_binary(uint64_t);
 void my_put_hexa_maj(uint64_t);
 void my_put_hexa_min(uint64_t);
@@ -60,5 +67,8 @@ void my_put_octal(uint64_t);
 void my_put_unprintable(char *);
 void my_put_short(short);
 void my_put_unsigned_short(short);
+
+char *get_next_line(int);
+char **my_realloc_array(char **, size_t);
 
 #endif
