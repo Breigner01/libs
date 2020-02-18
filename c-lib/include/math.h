@@ -8,6 +8,9 @@
 #ifndef MATH_H_
 #define MATH_H_
 
+#define ATN(c) (c - '0')
+#define NTA(n) (n + '0')
+
 int my_compute_power_rec(int nb, int p);
 int my_compute_square_root(int nb);
 int my_find_prime_sup(int nb);

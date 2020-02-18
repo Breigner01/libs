@@ -7,7 +7,7 @@
 
 CPPFLAGS=	-I include/
 CFLAGS	=	-Wall -Wextra
-LDFLAGS =	-L lib/linked_list -lll -L lib/math -lmath -L lib/mem -lmem -L lib/printf -lprintf -L lib/str -lstr -L lib/tab -ltab
+LDFLAGS =	-L./lib -lll -lmath -lmem -lprintf -lstr -ltab
 
 SRC		=
 
@@ -39,7 +39,7 @@ clean:
 	make clean -C tests/
 
 fclean: clean
-	rm -f $(NAME) $(GCDA) $(GCNO) unit_test
+	rm -f $(NAME) unit_test
 	make fclean -C lib/
 	make fclean -C tests/
 

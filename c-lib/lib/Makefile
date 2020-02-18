@@ -36,6 +36,7 @@ fclean:
 	make -C printf/ fclean
 	make -C str/ fclean
 	make -C tab/ fclean
+	rm -f *.a
 
 re:	fclean all
 

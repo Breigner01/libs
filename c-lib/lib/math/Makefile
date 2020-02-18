@@ -23,6 +23,7 @@ all:		$(NAME)
 
 $(NAME):	$(OBJ)
 	ar rc $(NAME) $(OBJ)
+	cp $(NAME) ../
 
 debug:		CFLAGS	+=	-g3
 debug:		$(NAME)
