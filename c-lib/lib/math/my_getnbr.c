@@ -11,16 +11,17 @@ int my_getnbr(char const *str)
     int j = 0;
     int k = 1;
 
-    while (str[i] == '+' || str[i] == '-') {
+    while (str[i] && (str[i] == '+' || str[i] == '-')) {
         if (str[i] == '-')
             k = k * -1;
         i++;
     }
-    while (str[i] != '\0') {
+    while (str[i]) {
         if (str[i] >= '0' && str[i] <= '9') {
             j = j * 10;
             j = j + str[i] - '0';
-        }
+        } else
+            break;
         i++;
     }
     return (j * k);

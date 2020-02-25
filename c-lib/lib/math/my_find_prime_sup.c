@@ -9,10 +9,8 @@
 
 int my_find_prime_sup(int nb)
 {
-    for (int i = nb; i <= (nb * nb); i++) {
-        my_is_prime(i);
+    for (int i = nb + 1; i <= (nb * nb); i++)
         if (my_is_prime(i) == 1)
             return (i);
-    }
     return (0);
 }
