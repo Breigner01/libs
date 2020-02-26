@@ -10,7 +10,8 @@ CPPFLAGS	=	-I ../../include/
 
 SRC			=	my_calloc.c			\
 				my_memset.c			\
-				my_realloc_array.c	\
+				my_realloc.c		\
+				my_reallocarray.c	\
 				my_swap.c
 
 OBJ			=	$(SRC:.c=.o)

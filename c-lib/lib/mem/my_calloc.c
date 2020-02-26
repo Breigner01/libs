@@ -9,7 +9,9 @@
 
 void *my_calloc(int mem, size_t size)
 {
-    void *ptr = malloc(size);
+    void *ptr = malloc(mem * size);
 
-    return (ptr ? my_memset(ptr, mem, size) : NULL);
+    if (mem == 0)
+        return (ptr);
+    return (ptr ? my_memset(ptr, 0, size) : NULL);
 }

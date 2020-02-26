@@ -16,7 +16,7 @@ char **my_realloc_array(char **ptr, size_t n)
     if (!ptr)
         return (NULL);
     for(; ptr[i]; i += 1);
-    new_ptr = malloc(sizeof(char *) * (i + n));
+    new_ptr = malloc(sizeof(char *) * n);
     for (; j < i; j += 1)
         new_ptr[j] = ptr[j];
     for (; j < i + n; j += 1)
