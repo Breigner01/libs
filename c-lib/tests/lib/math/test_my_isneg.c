@@ -14,7 +14,7 @@ void redirect_isneg_stdout(void)
     cr_redirect_stderr();
 }
 
-TestSuite(my_isneg, .init=redirect_isneg_stdout, .timeout=0.02);
+TestSuite(my_isneg, .init=redirect_isneg_stdout, .timeout=0.03);
 
 Test(my_isneg, positive_nb)
 {

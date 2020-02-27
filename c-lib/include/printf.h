@@ -27,6 +27,7 @@ void my_put_unsigned_long(unsigned long nb);
 void my_put_unsigned_short(short unsigned int nb);
 void my_putchar(const char c);
 void my_puterr(const char *str);
+void my_puts(char const *str);
 void my_putstr(const char *str);
 
 #endif /* !PRINTF_H_ */

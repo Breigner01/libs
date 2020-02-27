@@ -77,7 +77,20 @@ SRC		=	redirect_all_stdout.c						\
 			lib/mem/test_my_swap.c						\
 			lib/printf/test_my_printf.c					\
 			lib/printf/test_my_put_binary.c				\
-			lib/printf/test_my_put_hexa.c
+			lib/printf/test_my_put_hexa.c				\
+			lib/printf/test_my_put_long_long.c			\
+			lib/printf/test_my_put_long.c				\
+			lib/printf/test_my_put_nbr.c				\
+			lib/printf/test_my_put_octal.c				\
+			lib/printf/test_my_put_short.c				\
+			lib/printf/test_my_put_unprintable.c		\
+			lib/printf/test_my_put_unsigned_int.c		\
+			lib/printf/test_my_put_unsigned_long.c		\
+			lib/printf/test_my_put_unsigned_short.c		\
+			lib/printf/test_my_putchar.c				\
+			lib/printf/test_my_puterr.c					\
+			lib/printf/test_my_puts.c					\
+			lib/printf/test_my_putstr.c
 
 OBJ		=	$(SRC:.c=.o)
 

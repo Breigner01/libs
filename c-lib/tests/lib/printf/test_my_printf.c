@@ -9,12 +9,6 @@
 
 void my_printf(char *, ...);
 
-void redirect_all_stdout(void)
-{
-    cr_redirect_stdout();
-    cr_redirect_stderr();
-}
-
 TestSuite(my_printf, .init=redirect_all_stdout, .timeout=0.05);
 
 Test (my_printf, prints_int_i)

@@ -15,5 +15,7 @@
 #include <stdio.h>
 #include <stddef.h>
 
+void redirect_all_stdout(void);
+
 #endif
 
