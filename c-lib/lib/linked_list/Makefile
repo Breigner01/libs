@@ -7,6 +7,7 @@
 
 CFLAGS		=	-Wall -Wextra
 CPPFLAGS	=	-I ../../include/
+RM			?=	rm -f
 
 SRC			=	my_list_size.c		\
 				my_params_to_list.c	\
@@ -26,11 +27,11 @@ debug:		CFLAGS	+=	-g3
 debug:		$(NAME)
 
 clean:
-	rm -f $(OBJ)
+	$(RM) $(OBJ)
 
 fclean:	clean
-	rm -f $(NAME)
+	$(RM) $(NAME)
 
 re:	fclean all
 
-.PHONY: all debug clean fclean re
+.PHONY: clean fclean re

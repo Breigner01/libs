@@ -7,6 +7,7 @@
 
 CFLAGS		=	-Wall -Wextra
 CPPFLAGS	=	-I ../../include/
+RM			?=	rm -f
 
 SRC			=	my_printf.c				\
 				my_put_binary.c			\
@@ -22,6 +23,7 @@ SRC			=	my_printf.c				\
 				my_put_unsigned_short.c	\
 				my_putchar.c			\
 				my_puterr.c				\
+				my_puts.c				\
 				my_putstr.c
 
 OBJ			=	$(SRC:.c=.o)
@@ -38,11 +40,11 @@ debug:		CFLAGS	+=	-g3
 debug:		$(NAME)
 
 clean:
-	rm -f $(OBJ)
+	$(RM) $(OBJ)
 
 fclean:	clean
-	rm -f $(NAME)
+	$(RM) $(NAME)
 
 re:	fclean all
 
-.PHONY: all debug clean fclean re
+.PHONY: clean fclean re

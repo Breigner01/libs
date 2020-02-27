@@ -5,6 +5,8 @@
 ## make
 ##
 
+rm	?=	rm -f
+
 all:
 	make -C linked_list/
 	make -C math/
@@ -40,4 +42,4 @@ fclean:
 
 re:	fclean all
 
-.PHONY: all debug clean fclean re
+.PHONY: clean fclean re
