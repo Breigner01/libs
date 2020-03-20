@@ -9,7 +9,7 @@
 
 int my_getnbr(char const *str);
 
-TestSuite(my_getnbr, .timeout=0.05);
+TestSuite(my_getnbr, .timeout=0.075);
 
 Test(my_getnbr, normal_number)
 {

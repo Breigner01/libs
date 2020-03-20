@@ -9,7 +9,7 @@
 
 int my_find_prime_sup(int nb);
 
-TestSuite(my_find_prime_sup, .timeout=0.05);
+TestSuite(my_find_prime_sup, .timeout=0.075);
 
 Test(my_find_prime_sup, prime_test)
 {

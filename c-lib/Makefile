@@ -6,9 +6,13 @@
 ##
 
 CPPFLAGS=	-I include/
+
 CFLAGS	=	-Wall -Wextra
+
 LDFLAGS =	-L./lib -lll -lmath -lmem -lprintf -lstr -ltab
+
 CC		?=	gcc
+
 RM		?=	rm -f
 
 SRC		=
@@ -31,9 +35,7 @@ tests_run:
 	gcovr --exclude tests/ --branches
 
 debug: CFLAGS += -g3
-debug: $(OBJ)
-	make -C lib/
-	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS)
+debug: clean $(NAME)
 
 clean:
 	$(RM) $(OBJ)
@@ -41,7 +43,7 @@ clean:
 	make clean -C tests/
 
 fclean: clean
-	$(RM) $(NAME) unit_test
+	$(RM) $(NAME)
 	make fclean -C lib/
 	make fclean -C tests/
 

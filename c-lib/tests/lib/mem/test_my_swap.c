@@ -10,7 +10,7 @@
 #include "tests.h"
 #include "mem.h"
 
-TestSuite(my_swap, .timeout=0.03);
+TestSuite(my_swap, .timeout=0.075);
 
 Test(my_swap, swap_int)
 {

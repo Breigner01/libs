@@ -7,26 +7,12 @@
 
 #include <stdlib.h>
 #include "printf.h"
+#include "math.h"
 
 void my_put_binary(uint64_t nb)
 {
-    int i = 0;
-    int j = 0;
-    uint64_t two_pow = 1;
-    char *binary_nb;
+    char *bin_nb = nb_to_bin(nb);
 
-    for (; (two_pow * 2) <= nb; i++)
-        two_pow *= 2;
-    binary_nb = malloc(sizeof(char) * (i + 2));
-    for (; j <= i; j++) {
-        if (nb >= two_pow) {
-            nb -= two_pow;
-            binary_nb[j] = '1';
-        } else
-            binary_nb[j] = '0';
-        two_pow /= 2;
-    }
-    binary_nb[j] = '\0';
-    my_putstr(binary_nb);
-    free(binary_nb);
+    my_putstr(bin_nb);
+    free(bin_nb);
 }

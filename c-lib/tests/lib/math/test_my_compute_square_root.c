@@ -9,7 +9,7 @@
 
 int my_compute_square_root(int nb);
 
-TestSuite(my_compute_square_root, .timeout=0.05);
+TestSuite(my_compute_square_root, .timeout=0.075);
 
 Test(my_compute_square_root, perfect_square)
 {

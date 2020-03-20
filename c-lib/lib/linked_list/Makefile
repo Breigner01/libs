@@ -6,7 +6,9 @@
 ##
 
 CFLAGS		=	-Wall -Wextra
+
 CPPFLAGS	=	-I ../../include/
+
 RM			?=	rm -f
 
 SRC			=	my_list_size.c		\
@@ -18,6 +20,7 @@ OBJ			=	$(SRC:.c=.o)
 NAME		=	libll.a
 
 all:		$(NAME)
+	echo -e "
 
 $(NAME):	$(OBJ)
 	ar rc $(NAME) $(OBJ)

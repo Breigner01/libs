@@ -7,19 +7,18 @@
 
 #include "linked_list.h"
 
-void my_rev_list(linked_list_t **begin)
+void my_rev_list(linked_list_t **head)
 {
-    linked_list_t *my_list;
-    linked_list_t *temporary;
-    linked_list_t *to_be_continued;
+    linked_list_t *linked_list = *head;
+    linked_list_t *prev = NULL;
+    linked_list_t *next;
 
-    my_list = *begin;
-    while (my_list->next != NULL) {
-        to_be_continued = my_list->next;
-        my_list->next = temporary;
-        temporary = my_list;
-        my_list = to_be_continued;
+    while (linked_list->next) {
+        next = linked_list->next;
+        linked_list->next = prev;
+        prev = linked_list;
+        linked_list = next;
     }
-    my_list->next = temporary;
-    *begin = my_list;
+    linked_list->next = prev;
+    *head = linked_list;
 }

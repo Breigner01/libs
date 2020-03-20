@@ -8,6 +8,7 @@
 #ifndef STR_H_
 #define STR_H_
 
+int char_counter(char const *str, char c);
 char *my_revstr(char *str);
 char *my_strcat(char *dest, char const *src);
 int my_strcmp(char const *s1, char const *s2);

@@ -19,5 +19,6 @@ typedef struct linked_list_s {
 int my_list_size(linked_list_t const *begin);
 linked_list_t *my_set_list(linked_list_t *l_list, void *data);
 void my_rev_list(linked_list_t **begin);
+linked_list_t *my_params_to_list(int ac, char *const *av);
 
 #endif /* !LINKED_LIST_H_ */

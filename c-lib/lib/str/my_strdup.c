@@ -7,16 +7,18 @@
 
 #include <stdlib.h>
 #include "str.h"
+#include "mem.h"
 
 char *my_strdup(char const *str)
 {
-    char *strc = malloc(sizeof(char) * (my_strlen(str) + 1));
+    char *strc = my_calloc((my_strlen(str) + 1), sizeof(char));
     int i = 0;
 
-    while (str[i] != '\0') {
+    if (!str || !strc)
+        return (NULL);
+    while (str[i]) {
         strc[i] = str[i];
-        i++;
+        i += 1;
     }
-    strc[i] = '\0';
     return (strc);
 }

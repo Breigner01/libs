@@ -8,7 +8,7 @@
 #include "tests.h"
 #include "mem.h"
 
-TestSuite(my_realloc, .timeout=0.05);
+TestSuite(my_realloc, .timeout=0.075);
 
 Test(my_realloc, str_reallocation)
 {

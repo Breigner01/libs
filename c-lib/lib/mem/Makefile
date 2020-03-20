@@ -6,7 +6,9 @@
 ##
 
 CFLAGS		=	-Wall -Wextra
+
 CPPFLAGS	=	-I ../../include/
+
 RM			?=	rm -f
 
 SRC			=	my_calloc.c			\

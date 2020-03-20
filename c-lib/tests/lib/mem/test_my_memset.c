@@ -8,7 +8,7 @@
 #include "tests.h"
 #include "mem.h"
 
-TestSuite(my_memset, .timeout=0.05);
+TestSuite(my_memset, .timeout=0.075);
 
 Test(my_memset, fill_array_with_0)
 {

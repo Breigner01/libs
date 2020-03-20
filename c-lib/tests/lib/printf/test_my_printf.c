@@ -9,7 +9,7 @@
 
 void my_printf(char *, ...);
 
-TestSuite(my_printf, .init=redirect_all_stdout, .timeout=0.05);
+TestSuite(my_printf, .init=redirect_all_stdout, .timeout=0.075);
 
 Test (my_printf, prints_int_i)
 {

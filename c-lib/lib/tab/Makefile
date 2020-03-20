@@ -6,14 +6,14 @@
 ##
 
 CFLAGS		=	-Wall -Wextra
-CPPFLAGS	=	-I ../../include/
-RM			?=	rm -f
 
-SRC			=	count_line_len.c		\
-				count_line_nb.c			\
-				fill_tab.c				\
-				my_str_to_word_array.c	\
-				my_strtok.c				\
+CPPFLAGS	=	-I ../../include/
+
+SRC			=	count_line_len.c			\
+				count_line_nb.c				\
+				fill_tab.c					\
+				my_str_to_word_array.c		\
+				my_str_to_word_array_tok.c	\
 				my_tablen.c
 
 OBJ			=	$(SRC:.c=.o)
@@ -30,11 +30,11 @@ debug:		CFLAGS	+=	-g3
 debug:		$(NAME)
 
 clean:
-	$(RM) $(OBJ)
+	rm -f $(OBJ)
 
 fclean:	clean
-	$(RM) $(NAME)
+	rm -f $(NAME)
 
 re:	fclean all
 
-.PHONY: clean fclean re
+.PHONY: all debug clean fclean re

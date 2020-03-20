@@ -7,9 +7,9 @@
 
 CFLAGS		=	-Wall -Wextra
 CPPFLAGS	=	-I ../../include/
-RM			?=	rm -f
 
-SRC			=	get_next_line.c		\
+SRC			=	char_counter.c		\
+				get_next_line.c		\
 				my_revstr.c			\
 				my_strcat.c			\
 				my_strcmp.c			\
@@ -37,11 +37,11 @@ debug:		CFLAGS	+=	-g3
 debug:		$(NAME)
 
 clean:
-	$(RM) $(OBJ)
+	rm -f $(OBJ)
 
 fclean:	clean
-	$(RM) $(NAME)
+	rm -f $(NAME)
 
 re:	fclean all
 
-.PHONY: clean fclean re
+.PHONY: all debug clean fclean re

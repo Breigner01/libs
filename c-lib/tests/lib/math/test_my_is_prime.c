@@ -9,7 +9,7 @@
 
 int my_is_prime(int nb);
 
-TestSuite(my_is_prime, .timeout=0.05);
+TestSuite(my_is_prime, .timeout=0.075);
 
 Test(my_is_prime, small_prime_nb)
 {

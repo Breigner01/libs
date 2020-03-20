@@ -8,7 +8,7 @@
 #include "tests.h"
 #include "mem.h"
 
-TestSuite(my_reallocarray, .timeout=0.05);
+TestSuite(my_reallocarray, .timeout=0.075);
 
 Test(my_reallocarray, classical_reallocation)
 {

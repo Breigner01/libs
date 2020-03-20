@@ -8,7 +8,7 @@
 #include "tests.h"
 #include "printf.h"
 
-TestSuite(my_putchar, .init=redirect_all_stdout, .timeout=0.05);
+TestSuite(my_putchar, .init=redirect_all_stdout, .timeout=0.075);
 
 Test(my_putchar, test_with_char)
 {

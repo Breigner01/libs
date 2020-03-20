@@ -9,7 +9,7 @@
 
 int my_compute_power_rec(int nb, int p);
 
-TestSuite(my_compute_power_rec, .timeout=0.05);
+TestSuite(my_compute_power_rec, .timeout=0.075);
 
 Test(my_compute_power_rec, power_1)
 {

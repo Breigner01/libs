@@ -8,7 +8,7 @@
 #include "tests.h"
 #include "printf.h"
 
-TestSuite(my_put_unsigned_short, .init=redirect_all_stdout, .timeout=0.05);
+TestSuite(my_put_unsigned_short, .init=redirect_all_stdout, .timeout=0.075);
 
 Test(my_put_unsigned_short, test_small_nb)
 {
