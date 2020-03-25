@@ -23,11 +23,8 @@ SRC		=	redirect_all_stdout.c						\
 			../lib/linked_list/my_rev_list.c			\
 			../lib/math/my_compute_power_rec.c			\
 			../lib/math/my_compute_square_root.c		\
-			../lib/math/my_find_prime_sup.c				\
 			../lib/math/my_getnbr.c						\
 			../lib/math/nb_to_bin.c						\
-			../lib/math/my_is_prime.c					\
-			../lib/math/my_isneg.c						\
 			../lib/mem/my_calloc.c						\
 			../lib/mem/my_memset.c						\
 			../lib/mem/my_realloc.c						\
@@ -74,10 +71,7 @@ SRC		=	redirect_all_stdout.c						\
 			lib/linked_list/test_my_rev_list.c			\
 			lib/math/test_my_compute_power_rec.c		\
 			lib/math/test_my_compute_square_root.c		\
-			lib/math/test_my_find_prime_sup.c			\
 			lib/math/test_my_getnbr.c					\
-			lib/math/test_my_is_prime.c					\
-			lib/math/test_my_isneg.c					\
 			lib/math/test_nb_to_bin.c					\
 			lib/mem/test_my_calloc.c					\
 			lib/mem/test_my_memset.c					\

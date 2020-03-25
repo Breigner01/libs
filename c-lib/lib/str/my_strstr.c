@@ -28,6 +28,8 @@ char *my_strstr(char *str, char const *to_find)
 {
     int i[3] = {0, 0, 0};
 
+    if (!str || !to_find)
+        return (NULL);
     while (str[i[0]] != '\0') {
         compare(str, to_find, &i);
         if (i[2] == 1)

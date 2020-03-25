@@ -29,7 +29,7 @@ Test(my_strcpy, copy_empty_str)
 Test(my_strcpy, copy_null_str)
 {
     char *str = NULL;
-    char *string;
+    char string[5];
 
     cr_assert_null(my_strcpy(string, str));
 }
