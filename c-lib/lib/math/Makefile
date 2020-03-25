@@ -13,10 +13,7 @@ RM			?=	rm -f
 
 SRC			=	my_compute_power_rec.c		\
 				my_compute_square_root.c	\
-				my_find_prime_sup.c			\
 				my_getnbr.c					\
-				my_is_prime.c				\
-				my_isneg.c					\
 				nb_to_bin.c
 
 OBJ			=	$(SRC:.c=.o)
