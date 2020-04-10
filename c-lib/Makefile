@@ -35,7 +35,9 @@ tests_run:
 	gcovr --exclude tests/ --branches
 
 debug: CFLAGS += -g3
-debug: clean $(NAME)
+debug: $(OBJ)
+	make debug -C lib/
+	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS)
 
 clean:
 	$(RM) $(OBJ)
@@ -49,4 +51,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: tests_run clean fclean re
+.PHONY: all debug tests_run clean fclean re

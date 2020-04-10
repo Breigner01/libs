@@ -106,7 +106,13 @@ SRC		=	redirect_all_stdout.c						\
 			lib/str/test_my_strncmp.c					\
 			lib/str/test_my_strncpy.c					\
 			lib/str/test_my_strstr.c					\
-			lib/str/test_my_strupcase.c
+			lib/str/test_my_strupcase.c					\
+			lib/tab/test_count_line_len.c				\
+			lib/tab/test_count_line_nb.c				\
+			lib/tab/test_fill_tab.c						\
+			lib/tab/test_my_str_to_word_array_tok.c		\
+			lib/tab/test_my_str_to_word_array.c			\
+			lib/tab/test_my_tablen.c
 
 OBJ		=	$(SRC:.c=.o)
 
