@@ -9,12 +9,25 @@
 #include "mem.h"
 #include "str.h"
 
-static int look_for_delim(char *str, char const *delim, int i)
+static int look_for_delim(char const *str, char const *delim, int i)
 {
     for (int j = 0; delim[j]; j++)
         if (str[i] == delim[j])
             return (i);
     return (0);
+}
+
+static int nb_delim(char const *str, char const *delim, const int ptr_offset)
+{
+    int check = 0;
+    int i = 0;
+
+    for (i = ptr_offset; str[i]; i++) {
+        check = look_for_delim(str, delim, i);
+        if (check == 0)
+            return (i - ptr_offset);
+    }
+    return (i - ptr_offset);
 }
 
 static char *retrieve_str(char *str, char const *delim, int *ptr_offset)
@@ -44,18 +57,18 @@ char *my_strtok(char *str, char const *delim)
     char *dest;
     int ptr_offset = 0;
 
-    if (!str && !s)
+    if ((!str && !s) || !delim)
         return (NULL);
     if (!str) {
         dest = retrieve_str(s, delim, &ptr_offset);
         if (!dest)
             return (NULL);
-        s += ptr_offset + 1;
+        s += ptr_offset + nb_delim(s, delim, ptr_offset);
     } else {
         dest = retrieve_str(str, delim, &ptr_offset);
         if (!dest)
             return (NULL);
-        s = str + ptr_offset + 1;
+        s = str + ptr_offset + nb_delim(str, delim, ptr_offset);
     }
     if (!s[0])
         s = NULL;
