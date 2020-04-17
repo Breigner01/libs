@@ -6,7 +6,7 @@
 */
 
 #include "tests.h"
-#include "math.h"
+#include "maths.h"
 
 TestSuite(nb_to_bin, .timeout=0.075);
 

@@ -5,12 +5,13 @@
 ** header
 */
 
-#ifndef MATH_H_
-#define MATH_H_
+#ifndef MATHS_H_
+#define MATHS_H_
 
 #define ATN(c) (c - '0')
 #define NTA(n) (n + '0')
 
+#include <inttypes.h>
 #include <stdint.h>
 
 /************************************************
@@ -81,4 +82,4 @@ int my_getnbr(char const *str);
  */
 char *nb_to_bin(uint64_t nb);
 
-#endif /* !MATH_H_ */
+#endif /* !MATHS_H_ */

@@ -5,7 +5,7 @@
 ** returns the number at the power both given as parameter with recursive
 */
 
-#include "math.h"
+#include "maths.h"
 
 int my_compute_power_rec(int nb, int p)
 {

@@ -10,8 +10,8 @@ rm	?=	rm -f
 all:
 	@echo "\e[38;5;208mBUILDING LINKED LIST LIB MODULE\e[0m"
 	@make -s -C linked_list/
-	@echo "\e[38;5;208mBUILDING MATH LIB MODULE\e[0m"
-	@make -s -C math/
+	@echo "\e[38;5;208mBUILDING MATHS LIB MODULE\e[0m"
+	@make -s -C maths/
 	@echo "\e[38;5;208mBUILDING MEM LIB MODULE\e[0m"
 	@make -s -C mem/
 	@echo "\e[38;5;208mBUILDING PRINT LIB MODULE\e[0m"
@@ -24,8 +24,8 @@ all:
 debug:
 	@echo "\e[38;5;208mBUILDING LINKED LIST LIB MODULE IN DEBUG MODE\e[0m"
 	@make -C linked_list/ debug
-	@echo "\e[38;5;208mBUILDING MATH LIB MODULE IN DEBUG MODE\e[0m"
-	@make -C math/ debug
+	@echo "\e[38;5;208mBUILDING MATHS LIB MODULE IN DEBUG MODE\e[0m"
+	@make -C maths/ debug
 	@echo "\e[38;5;208mBUILDING MEM LIB MODULE IN DEBUG MODE\e[0m"
 	@make -C mem/ debug
 	@echo "\e[38;5;208mBUILDING PRINT LIB MODULE IN DEBUG MODE\e[0m"
@@ -37,7 +37,7 @@ debug:
 
 clean:
 	make -C linked_list/ clean
-	make -C math/ clean
+	make -C maths/ clean
 	make -C mem/ clean
 	make -C print/ clean
 	make -C str/ clean
@@ -45,7 +45,7 @@ clean:
 
 fclean:
 	make -C linked_list/ fclean
-	make -C math/ fclean
+	make -C maths/ fclean
 	make -C mem/ fclean
 	make -C print/ fclean
 	make -C str/ fclean

@@ -18,7 +18,7 @@ SRC			=	my_compute_power_rec.c		\
 
 OBJ			=	$(SRC:.c=.o)
 
-NAME		=	libmath.a
+NAME		=	libmaths.a
 
 all:		$(NAME)
 

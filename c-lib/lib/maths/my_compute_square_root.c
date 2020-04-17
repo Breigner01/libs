@@ -5,7 +5,7 @@
 ** returns the square root of perfect square
 */
 
-#include "math.h"
+#include "maths.h"
 
 int result(int nb, int square, int i)
 {

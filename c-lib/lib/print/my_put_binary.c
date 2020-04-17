@@ -7,7 +7,7 @@
 
 #include <stdlib.h>
 #include "print.h"
-#include "math.h"
+#include "maths.h"
 
 void my_put_binary(uint64_t nb)
 {

@@ -5,7 +5,7 @@
 ** IDK
 */
 
-#include "math.h"
+#include "maths.h"
 
 int my_getnbr(char const *str)
 {

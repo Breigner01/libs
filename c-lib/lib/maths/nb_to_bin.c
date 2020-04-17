@@ -6,8 +6,7 @@
 */
 
 #include <stdlib.h>
-#include <inttypes.h>
-#include "math.h"
+#include "maths.h"
 
 char *nb_to_bin(uint64_t nb)
 {

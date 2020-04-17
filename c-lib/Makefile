@@ -9,7 +9,7 @@ CPPFLAGS	=	-I include/
 
 CFLAGS		=	-Wall -Wextra
 
-LDFLAGS 	=	-L./lib -lll -lmath -ltab -lmem -lprint -lstr
+LDFLAGS 	=	-L./lib -lll -lmaths -ltab -lmem -lprint -lstr
 
 CC			?=	gcc
 
