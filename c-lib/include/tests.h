@@ -15,6 +15,17 @@
 #include <stdio.h>
 #include <stddef.h>
 
+/**********************************************************
+ * \author Benjamin R.
+ * \file redirect_all_stdout.c
+ *
+ * \brief redirects stdout and stderr for criterion tests
+ *
+ * \param none
+ *
+ * \return nothing
+ **********************************************************
+ */
 void redirect_all_stdout(void);
 
 #endif
