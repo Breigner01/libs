@@ -28,5 +28,4 @@
  */
 void redirect_all_stdout(void);
 
-#endif
-
+#endif /* !TESTS_H_ */
