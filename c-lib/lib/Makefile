@@ -8,20 +8,32 @@
 rm	?=	rm -f
 
 all:
-	make -C linked_list/
-	make -C math/
-	make -C mem/
-	make -C printf/
-	make -C str/
-	make -C tab/
+	@echo "\e[38;5;208mBUILDING LINKED LIST LIB MODULE\e[0m"
+	@make -s -C linked_list/
+	@echo "\e[38;5;208mBUILDING MATH LIB MODULE\e[0m"
+	@make -s -C math/
+	@echo "\e[38;5;208mBUILDING MEM LIB MODULE\e[0m"
+	@make -s -C mem/
+	@echo "\e[38;5;208mBUILDING PRINTF LIB MODULE\e[0m"
+	@make -s -C printf/
+	@echo "\e[38;5;208mBUILDING STR MODULE\e[0m"
+	@make -s -C str/
+	@echo "\e[38;5;208mBUILDING TAB LIB MODULE\e[0m"
+	@make -s -C tab/
 
 debug:
-	make -C linked_list/ debug
-	make -C math/ debug
-	make -C mem/ debug
-	make -C printf/ debug
-	make -C str/ debug
-	make -C tab/ debug
+	@echo "\e[38;5;208mBUILDING LINKED LIST LIB MODULE IN DEBUG MODE\e[0m"
+	@make -C linked_list/ debug
+	@echo "\e[38;5;208mBUILDING MATH LIB MODULE IN DEBUG MODE\e[0m"
+	@make -C math/ debug
+	@echo "\e[38;5;208mBUILDING MEM LIB MODULE IN DEBUG MODE\e[0m"
+	@make -C mem/ debug
+	@echo "\e[38;5;208mBUILDING PRINTF LIB MODULE IN DEBUG MODE\e[0m"
+	@make -C printf/ debug
+	@echo "\e[38;5;208mBUILDING STR MODULE IN DEBUG MODE\e[0m"
+	@make -C str/ debug
+	@echo "\e[38;5;208mBUILDING TAB LIB MODULE IN DEBUG MODE\e[0m"
+	@make -C tab/ debug
 
 clean:
 	make -C linked_list/ clean
@@ -42,4 +54,4 @@ fclean:
 
 re:	fclean all
 
-.PHONY: clean fclean re
+.PHONY: all debug clean fclean re

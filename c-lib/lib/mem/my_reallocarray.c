@@ -7,19 +7,22 @@
 
 #include "mem.h"
 
-char **my_realloc_array(char **ptr, size_t n)
+void *my_reallocarray(void *ptr, size_t nmemb, size_t size)
 {
-    size_t i = 0;
-    size_t j = 0;
     char **new_ptr;
+    char **arr = (char **)ptr;
 
-    if (!ptr)
+    if (size == 0 && ptr) {
+        free(ptr);
         return (NULL);
-    for(; ptr[i]; i += 1);
-    new_ptr = malloc(sizeof(char *) * n);
-    for (; j < i; j += 1)
-        new_ptr[j] = ptr[j];
-    for (; j < i + n; j += 1)
-        new_ptr[j] = NULL;
+    }
+    new_ptr = my_calloc(nmemb, size);
+    if (!new_ptr || nmemb == 0)
+        return (NULL);
+    if (ptr) {
+        for (size_t i = 0; arr[i] && i < nmemb; i++)
+            new_ptr[i] = arr[i];
+        free(ptr);
+    }
     return (new_ptr);
 }

@@ -7,14 +7,24 @@
 
 #include <stddef.h>
 #include <stdlib.h>
+#include "mem.h"
 
-void *my_realloc(void *ptr, size_t size)
+void *my_realloc(void *ptr, size_t nmemb, size_t size)
 {
-    void *new_ptr = malloc(size);
+    char *new_ptr;
+    char *str = (char *)ptr;
 
-    if (!new_ptr)
+    if (size == 0 && ptr) {
+        free(ptr);
         return (NULL);
-    for (int i = 0; ((char **)ptr)[i]; i++)
-        ((char **)new_ptr)[i] = ((char **)ptr)[i];
+    }
+    new_ptr = my_calloc(nmemb, size);
+    if (!new_ptr || nmemb == 0)
+        return (NULL);
+    if (ptr) {
+        for (size_t i = 0; str[i] && i < nmemb; i++)
+            new_ptr[i] = str[i];
+        free(ptr);
+    }
     return (new_ptr);
 }

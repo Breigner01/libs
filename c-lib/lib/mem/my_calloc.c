@@ -13,5 +13,5 @@ void *my_calloc(int mem, size_t size)
 
     if (mem == 0)
         return (ptr);
-    return (ptr ? my_memset(ptr, 0, size) : NULL);
+    return (ptr ? my_memset(ptr, 0, size * mem) : NULL);
 }
