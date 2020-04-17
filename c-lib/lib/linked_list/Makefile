@@ -20,7 +20,6 @@ OBJ			=	$(SRC:.c=.o)
 NAME		=	libll.a
 
 all:		$(NAME)
-	echo -e "
 
 $(NAME):	$(OBJ)
 	ar rc $(NAME) $(OBJ)
