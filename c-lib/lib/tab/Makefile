@@ -11,10 +11,11 @@ CPPFLAGS	=	-I ../../include/
 
 SRC			=	count_line_len.c			\
 				count_line_nb.c				\
-				fill_tab.c					\
 				my_str_to_word_array.c		\
 				my_str_to_word_array_tok.c	\
-				my_tablen.c
+				my_strtok.c					\
+				my_tablen.c					\
+				str_to_arr.c
 
 OBJ			=	$(SRC:.c=.o)
 
