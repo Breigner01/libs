@@ -7,11 +7,11 @@
 
 #include "mem.h"
 
-void *my_memset(void *ptr, int mem, size_t size)
+void *my_memset(void *ptr, int c, size_t n)
 {
     char *str = (char *)ptr;
 
-    for (size_t i = 0; i < size; i++)
-        str[i] = mem;
+    for (size_t i = 0; i < n; i++)
+        str[i] = c;
     return (str);
 }
