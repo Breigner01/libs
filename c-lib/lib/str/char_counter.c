@@ -5,6 +5,8 @@
 ** char_counter
 */
 
+#include "str.h"
+
 int char_counter(char const *str, char c)
 {
     int count = 0;

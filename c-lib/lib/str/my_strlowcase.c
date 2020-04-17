@@ -5,6 +5,8 @@
 ** changes upper case into lower case
 */
 
+#include "str.h"
+
 char *my_strlowcase(char *str)
 {
     int i = 0;

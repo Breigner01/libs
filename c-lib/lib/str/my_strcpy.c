@@ -6,6 +6,7 @@
 */
 
 #include <stddef.h>
+#include "str.h"
 
 char *my_strcpy(char *dest, char *str)
 {

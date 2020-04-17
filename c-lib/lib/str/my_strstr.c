@@ -8,30 +8,30 @@
 #include <stddef.h>
 #include "str.h"
 
-void compare(char *str, char const *to_find, int (*i)[3])
+void compare(char *str, char const *substr, int (*i)[3])
 {
-    while (str[(*i)[0]] == to_find[(*i)[1]] || to_find[(*i)[1]] == '\0') {
-        if (to_find[(*i)[1]] == '\0') {
+    while (str[(*i)[0]] == substr[(*i)[1]] || substr[(*i)[1]] == '\0') {
+        if (substr[(*i)[1]] == '\0') {
             (*i)[2] = 1;
             return;
         }
         (*i)[0]++;
         (*i)[1]++;
-        if (str[(*i)[0]] == '\0' && to_find[(*i)[1]] != '\0') {
+        if (str[(*i)[0]] == '\0' && substr[(*i)[1]] != '\0') {
             (*i)[2] = 2;
             return;
         }
     }
 }
 
-char *my_strstr(char *str, char const *to_find)
+char *my_strstr(char *str, char const *substr)
 {
     int i[3] = {0, 0, 0};
 
-    if (!str || !to_find)
+    if (!str || !substr)
         return (NULL);
     while (str[i[0]] != '\0') {
-        compare(str, to_find, &i);
+        compare(str, substr, &i);
         if (i[2] == 1)
             return (str + i[0] - i[1]);
         if (i[2] == 2)

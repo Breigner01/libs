@@ -5,6 +5,8 @@
 ** changes lower case into upper case
 */
 
+#include "str.h"
+
 char *my_strupcase(char *str)
 {
     int i = 0;

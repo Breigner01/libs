@@ -5,6 +5,8 @@
 ** counts the size of a string
 */
 
+#include "str.h"
+
 int my_strlen(char const *str)
 {
     int i = 0;
