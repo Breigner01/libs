@@ -5,6 +5,8 @@
 ** returns the square root of perfect square
 */
 
+#include "math.h"
+
 int result(int nb, int square, int i)
 {
     if (square == nb)
