@@ -5,6 +5,8 @@
 ** count the number of lines
 */
 
+#include "tab.h"
+
 int count_line_nb(const char *str)
 {
     int j = 0;

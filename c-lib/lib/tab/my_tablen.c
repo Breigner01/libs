@@ -5,6 +5,8 @@
 ** counts the size of a string
 */
 
+#include "tab.h"
+
 int my_tablen(char **tab)
 {
     int i = 0;

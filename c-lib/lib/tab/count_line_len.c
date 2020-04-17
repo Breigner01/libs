@@ -5,6 +5,8 @@
 ** count the length of the longest line
 */
 
+#include "tab.h"
+
 int count_line_len(const char *str)
 {
     int i = 0;

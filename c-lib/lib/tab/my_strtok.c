@@ -8,6 +8,7 @@
 #include <stddef.h>
 #include "mem.h"
 #include "str.h"
+#include "tab.h"
 
 static int look_for_delim(char const *str, char const *delim, int i)
 {
