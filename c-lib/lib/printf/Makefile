@@ -30,7 +30,7 @@ SRC			=	my_printf.c				\
 
 OBJ			=	$(SRC:.c=.o)
 
-NAME		=	libprintf.a
+NAME		=	libprint.a
 
 all:		$(NAME)
 
