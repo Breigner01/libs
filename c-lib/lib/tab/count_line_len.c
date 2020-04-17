@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2019
 ** lib
 ** File description:
-** count the length of a line
+** count the length of the longest line
 */
 
 int count_line_len(const char *str)
@@ -11,8 +11,10 @@ int count_line_len(const char *str)
     int len = 0;
     int tmp = 0;
 
-    while (str[i] != '\0') {
-        while (str[i] != '\n') {
+    if (!str)
+        return (0);
+    while (str[i]) {
+        while (str[i] != '\n' && str[i]) {
             tmp += 1;
             i += 1;
         }

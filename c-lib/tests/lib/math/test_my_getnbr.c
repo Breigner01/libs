@@ -58,3 +58,8 @@ Test(my_getnbr, wrong_strings)
     cr_assert_eq(0, my_getnbr("--+-+-+-+-++-+---+-+-+-"));
     cr_assert_eq(0, my_getnbr("()"));
 }
+
+Test(my_getnbr, null_string)
+{
+    cr_assert_eq(0, my_getnbr(NULL));
+}

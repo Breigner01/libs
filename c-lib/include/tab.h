@@ -12,7 +12,8 @@ int count_line_len(const char *str);
 int count_line_nb(const char *str);
 char **fill_tab(const char *str);
 char **my_str_to_word_array(char const *str);
-char **my_strtok(char const *str, char delim);
-int my_tablen(char const **tab);
+char *my_strtok(char *str, char const *delim);
+int my_tablen(char **tab);
+char **str_to_arr(char *str, char *delim);
 
 #endif /* !TAB_H_ */

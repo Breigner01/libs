@@ -62,10 +62,11 @@ SRC		=	redirect_all_stdout.c						\
 			../lib/str/my_strupcase.c					\
 			../lib/tab/count_line_len.c					\
 			../lib/tab/count_line_nb.c					\
-			../lib/tab/fill_tab.c						\
 			../lib/tab/my_str_to_word_array.c			\
 			../lib/tab/my_str_to_word_array_tok.c		\
+			../lib/tab/my_strtok.c						\
 			../lib/tab/my_tablen.c						\
+			../lib/tab/str_to_arr.c						\
 			lib/linked_list/test_my_list_size.c			\
 			lib/linked_list/test_my_params_to_list.c	\
 			lib/linked_list/test_my_rev_list.c			\
@@ -76,6 +77,7 @@ SRC		=	redirect_all_stdout.c						\
 			lib/mem/test_my_calloc.c					\
 			lib/mem/test_my_memset.c					\
 			lib/mem/test_my_realloc.c					\
+			lib/mem/test_my_reallocarray.c				\
 			lib/mem/test_my_swap.c						\
 			lib/printf/test_my_printf.c					\
 			lib/printf/test_my_put_binary.c				\
@@ -106,7 +108,14 @@ SRC		=	redirect_all_stdout.c						\
 			lib/str/test_my_strncmp.c					\
 			lib/str/test_my_strncpy.c					\
 			lib/str/test_my_strstr.c					\
-			lib/str/test_my_strupcase.c
+			lib/str/test_my_strupcase.c					\
+			lib/tab/test_count_line_len.c				\
+			lib/tab/test_count_line_nb.c				\
+			lib/tab/test_my_str_to_word_array_tok.c		\
+			lib/tab/test_my_str_to_word_array.c			\
+			lib/tab/test_my_strtok.c					\
+			lib/tab/test_my_tablen.c					\
+			lib/tab/test_str_to_arr.c
 
 OBJ		=	$(SRC:.c=.o)
 
@@ -121,8 +130,13 @@ all:	$(NAME)
 $(NAME):	$(OBJ)
 	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS) $(UTFLAGS)
 
+debug: CFLAGS += -g3
+debug: $(NAME)
+
 clean:
 	$(RM) $(OBJ)
 
 fclean:
 	$(RM) $(NAME) $(GCDA) $(GCNO) ../$(NAME)
+
+.PHONY: all debug clean fclean

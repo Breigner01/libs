@@ -5,10 +5,12 @@
 ** counts the size of a string
 */
 
-int my_tablen(char const **tab)
+int my_tablen(char **tab)
 {
     int i = 0;
 
+    if (!tab)
+        return (0);
     while (tab[i])
         i += 1;
     return (i);
