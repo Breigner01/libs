@@ -5,11 +5,11 @@
 ** displays the number given as parameter
 */
 
-#include "printf.h"
-#include "str.h"
 #include <stdlib.h>
+#include "str.h"
+#include "print.h"
 
-void disp_long_long(long long nb, int sign)
+void disp_long_long(int64_t nb, int sign)
 {
     char *nb_str = malloc(sizeof(char) * 20);
     int i = 0;
@@ -25,7 +25,7 @@ void disp_long_long(long long nb, int sign)
     free(nb_str);
 }
 
-void my_put_long_long(long long nb)
+void my_put_long_long(int64_t nb)
 {
     if (nb < 0) {
         my_putchar('-');

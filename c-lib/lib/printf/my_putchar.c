@@ -6,6 +6,7 @@
 */
 
 #include <unistd.h>
+#include "print.h"
 
 void my_putchar(const char c)
 {

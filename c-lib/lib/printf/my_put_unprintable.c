@@ -5,9 +5,8 @@
 ** prints non printable ascii characters
 */
 
-#include <inttypes.h>
 #include "str.h"
-#include "printf.h"
+#include "print.h"
 
 void my_put_unprintable(char *str)
 {

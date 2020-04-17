@@ -5,9 +5,9 @@
 ** displays the number given as parameter
 */
 
-#include "str.h"
-#include "printf.h"
 #include <stdlib.h>
+#include "str.h"
+#include "print.h"
 
 void disp_long(long nb, int sign)
 {

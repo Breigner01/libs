@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "str.h"
-#include "printf.h"
+#include "print.h"
 
 void disp_short(short int nb, int sign)
 {

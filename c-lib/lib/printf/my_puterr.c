@@ -7,6 +7,7 @@
 
 #include <unistd.h>
 #include "str.h"
+#include "print.h"
 
 void my_puterr(const char *str)
 {

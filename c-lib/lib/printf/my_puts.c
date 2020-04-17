@@ -5,7 +5,7 @@
 ** puts
 */
 
-#include "printf.h"
+#include "print.h"
 
 void my_puts(char const *str)
 {

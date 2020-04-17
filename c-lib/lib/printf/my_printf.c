@@ -10,7 +10,7 @@
 #include <errno.h>
 #include <stdarg.h>
 #include <string.h>
-#include "printf.h"
+#include "print.h"
 
 void short_flags(char **tab, int *i, va_list arg)
 {

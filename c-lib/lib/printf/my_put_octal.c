@@ -6,9 +6,8 @@
 */
 
 #include <stdlib.h>
-#include <inttypes.h>
 #include "mem.h"
-#include "printf.h"
+#include "print.h"
 
 void my_put_octal(uint64_t nb)
 {

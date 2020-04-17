@@ -5,8 +5,8 @@
 ** change a decimal number into an hexadecimal number
 */
 
-#include "printf.h"
 #include <stdlib.h>
+#include "print.h"
 
 void hexa_fill(uint64_t *nb, uint64_t *hexa_pow, char **hexa_nb, int (*j)[2])
 {
@@ -46,16 +46,16 @@ void my_put_hexa(uint64_t nb, int letter)
 
 void my_put_hexa_min(uint64_t nb)
 {
-    my_put_hexa(nb, 39);
+    my_put_hexa(nb, LOWERCASE);
 }
 
 void my_put_hexa_maj(uint64_t nb)
 {
-    my_put_hexa(nb, 7);
+    my_put_hexa(nb, UPPERCASE);
 }
 
 void my_put_address(uint64_t nb)
 {
     my_putstr("0x");
-    my_put_hexa(nb, 39);
+    my_put_hexa(nb, LOWERCASE);
 }

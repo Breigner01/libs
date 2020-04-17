@@ -7,9 +7,9 @@
 
 #include <stdlib.h>
 #include "str.h"
-#include "printf.h"
+#include "print.h"
 
-void my_put_unsigned_short(short unsigned int nb)
+void my_put_unsigned_short(unsigned short nb)
 {
     char *nb_str = malloc(sizeof(char) * 6);
     int i = 0;

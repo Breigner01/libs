@@ -6,9 +6,8 @@
 */
 
 #include <stdlib.h>
-#include <stdio.h>
 #include "str.h"
-#include "printf.h"
+#include "print.h"
 
 void my_put_unsigned_int(unsigned int nb)
 {
