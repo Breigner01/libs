@@ -62,8 +62,6 @@ SRC		=	redirect_all_stdout.c						\
 			../lib/str/my_strupcase.c					\
 			../lib/tab/count_line_len.c					\
 			../lib/tab/count_line_nb.c					\
-			../lib/tab/my_str_to_word_array.c			\
-			../lib/tab/my_str_to_word_array_tok.c		\
 			../lib/tab/my_strtok.c						\
 			../lib/tab/my_tablen.c						\
 			../lib/tab/str_to_arr.c						\
@@ -111,8 +109,6 @@ SRC		=	redirect_all_stdout.c						\
 			lib/str/test_my_strupcase.c					\
 			lib/tab/test_count_line_len.c				\
 			lib/tab/test_count_line_nb.c				\
-			lib/tab/test_my_str_to_word_array_tok.c		\
-			lib/tab/test_my_str_to_word_array.c			\
 			lib/tab/test_my_strtok.c					\
 			lib/tab/test_my_tablen.c					\
 			lib/tab/test_str_to_arr.c
