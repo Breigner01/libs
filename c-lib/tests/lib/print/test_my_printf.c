@@ -6,8 +6,7 @@
 */
 
 #include "tests.h"
-
-void my_printf(char *, ...);
+#include "print.h"
 
 TestSuite(my_printf, .init=redirect_all_stdout, .timeout=0.075);
 

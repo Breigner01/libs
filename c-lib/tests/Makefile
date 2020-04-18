@@ -21,31 +21,31 @@ SRC		=	redirect_all_stdout.c						\
 			../lib/linked_list/my_list_size.c			\
 			../lib/linked_list/my_params_to_list.c		\
 			../lib/linked_list/my_rev_list.c			\
-			../lib/math/my_compute_power_rec.c			\
-			../lib/math/my_compute_square_root.c		\
-			../lib/math/my_getnbr.c						\
-			../lib/math/nb_to_bin.c						\
+			../lib/maths/my_compute_power_rec.c			\
+			../lib/maths/my_compute_square_root.c		\
+			../lib/maths/my_getnbr.c					\
+			../lib/maths/nb_to_bin.c					\
 			../lib/mem/my_calloc.c						\
 			../lib/mem/my_memset.c						\
 			../lib/mem/my_realloc.c						\
 			../lib/mem/my_reallocarray.c				\
 			../lib/mem/my_swap.c						\
-			../lib/printf/my_printf.c					\
-			../lib/printf/my_put_binary.c				\
-			../lib/printf/my_put_hexa.c					\
-			../lib/printf/my_put_long_long.c			\
-			../lib/printf/my_put_long.c					\
-			../lib/printf/my_put_nbr.c					\
-			../lib/printf/my_put_octal.c				\
-			../lib/printf/my_put_short.c				\
-			../lib/printf/my_put_unprintable.c			\
-			../lib/printf/my_put_unsigned_int.c			\
-			../lib/printf/my_put_unsigned_long.c		\
-			../lib/printf/my_put_unsigned_short.c		\
-			../lib/printf/my_putchar.c					\
-			../lib/printf/my_puterr.c					\
-			../lib/printf/my_puts.c						\
-			../lib/printf/my_putstr.c					\
+			../lib/print/my_printf.c					\
+			../lib/print/my_put_binary.c				\
+			../lib/print/my_put_hexa.c					\
+			../lib/print/my_put_long_long.c				\
+			../lib/print/my_put_long.c					\
+			../lib/print/my_put_nbr.c					\
+			../lib/print/my_put_octal.c					\
+			../lib/print/my_put_short.c					\
+			../lib/print/my_put_unprintable.c			\
+			../lib/print/my_put_unsigned_int.c			\
+			../lib/print/my_put_unsigned_long.c			\
+			../lib/print/my_put_unsigned_short.c		\
+			../lib/print/my_putchar.c					\
+			../lib/print/my_puterr.c					\
+			../lib/print/my_puts.c						\
+			../lib/print/my_putstr.c					\
 			../lib/str/char_counter.c					\
 			../lib/str/get_next_line.c					\
 			../lib/str/my_revstr.c						\
@@ -68,31 +68,31 @@ SRC		=	redirect_all_stdout.c						\
 			lib/linked_list/test_my_list_size.c			\
 			lib/linked_list/test_my_params_to_list.c	\
 			lib/linked_list/test_my_rev_list.c			\
-			lib/math/test_my_compute_power_rec.c		\
-			lib/math/test_my_compute_square_root.c		\
-			lib/math/test_my_getnbr.c					\
-			lib/math/test_nb_to_bin.c					\
+			lib/maths/test_my_compute_power_rec.c		\
+			lib/maths/test_my_compute_square_root.c		\
+			lib/maths/test_my_getnbr.c					\
+			lib/maths/test_nb_to_bin.c					\
 			lib/mem/test_my_calloc.c					\
 			lib/mem/test_my_memset.c					\
 			lib/mem/test_my_realloc.c					\
 			lib/mem/test_my_reallocarray.c				\
 			lib/mem/test_my_swap.c						\
-			lib/printf/test_my_printf.c					\
-			lib/printf/test_my_put_binary.c				\
-			lib/printf/test_my_put_hexa.c				\
-			lib/printf/test_my_put_long_long.c			\
-			lib/printf/test_my_put_long.c				\
-			lib/printf/test_my_put_nbr.c				\
-			lib/printf/test_my_put_octal.c				\
-			lib/printf/test_my_put_short.c				\
-			lib/printf/test_my_put_unprintable.c		\
-			lib/printf/test_my_put_unsigned_int.c		\
-			lib/printf/test_my_put_unsigned_long.c		\
-			lib/printf/test_my_put_unsigned_short.c		\
-			lib/printf/test_my_putchar.c				\
-			lib/printf/test_my_puterr.c					\
-			lib/printf/test_my_puts.c					\
-			lib/printf/test_my_putstr.c					\
+			lib/print/test_my_printf.c					\
+			lib/print/test_my_put_binary.c				\
+			lib/print/test_my_put_hexa.c				\
+			lib/print/test_my_put_long_long.c			\
+			lib/print/test_my_put_long.c				\
+			lib/print/test_my_put_nbr.c					\
+			lib/print/test_my_put_octal.c				\
+			lib/print/test_my_put_short.c				\
+			lib/print/test_my_put_unprintable.c			\
+			lib/print/test_my_put_unsigned_int.c		\
+			lib/print/test_my_put_unsigned_long.c		\
+			lib/print/test_my_put_unsigned_short.c		\
+			lib/print/test_my_putchar.c					\
+			lib/print/test_my_puterr.c					\
+			lib/print/test_my_puts.c					\
+			lib/print/test_my_putstr.c					\
 			lib/str/test_char_counter.c					\
 			lib/str/test_get_next_line.c				\
 			lib/str/test_my_revstr.c					\

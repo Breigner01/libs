@@ -6,7 +6,7 @@
 */
 
 #include "tests.h"
-#include "printf.h"
+#include "print.h"
 
 TestSuite(my_puterr, .init=redirect_all_stdout, .timeout=0.075);
 
