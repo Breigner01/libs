@@ -26,9 +26,9 @@ Test(my_reallocarray, classical_reallocation)
 
 Test(my_reallocarray, null_ptr)
 {
-    char **arr = my_calloc(42, 69);
+    char **arr = my_reallocarray(NULL, 42, 69);
 
-    cr_assert_str_eq(my_reallocarray(NULL, 42, 69), arr);
+    cr_assert_null(arr[0]);
 }
 
 Test(my_reallocarray, no_size)
