@@ -43,7 +43,6 @@ tests_run:
 	@echo "\e[38;5;208mBUILDING UNIT TESTS\e[0m"
 	@make -s -C tests/
 	@cp tests/unit_test .
-	-./unit_test
 	@-mkdir $(COVERAGE)
 	gcovr --exclude tests/ --html --html-details -o $(HTMLCOVER)
 
@@ -51,7 +50,6 @@ tests_run_debug:
 	@echo "\e[38;5;208mBUILDING UNIT TESTS IN DEBUG MODE\e[0m"
 	@make debug -s -C tests/
 	@cp tests/unit_test .
-	-./unit_test -j1
 	@-mkdir $(COVERAGE)
 	gcovr --exclude tests/ --html --html-details -o $(HTMLCOVER)
 
