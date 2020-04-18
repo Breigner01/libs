@@ -15,11 +15,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Install Criterion
+    - name: Install Criterion and Gcovr
       run: |
         sudo add-apt-repository ppa:snaipewastaken/ppa
         sudo apt-get update
-        sudo apt-get install criterion-dev
+        sudo apt-get install criterion-dev gcovr
     - name: Build
       run: make tests_run
     - name: Run
