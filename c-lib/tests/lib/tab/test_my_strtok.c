@@ -13,8 +13,9 @@ TestSuite(my_strtok, .timeout=0.1);
 Test(my_strtok, classical_string)
 {
     char str[] = "Hello\nCoucou\nTest\nEpitech\n";
+    char *s = strdup(str);
     char *tok_1 = strtok(str, "\n");
-    char *tok_2 = my_strtok(str, "\n");
+    char *tok_2 = my_strtok(s, "\n");
 
     while (tok_1 && tok_2) {
         cr_assert_str_eq(tok_2, tok_1);
@@ -37,8 +38,9 @@ Test(my_strtok, string_without_delim)
 Test(my_strtok, string_with_mult_delim)
 {
     char str[] = "Hello\n\n\n\nCoucou\n\n\nTest\n\nEpitech\n\n\n\n\n\n\n\n\n";
+    char *s = strdup(str);
     char *tok_1 = strtok(str, "\n");
-    char *tok_2 = my_strtok(str, "\n");
+    char *tok_2 = my_strtok(s, "\n");
 
     while (tok_1 && tok_2) {
         cr_assert_str_eq(tok_2, tok_1);
@@ -52,8 +54,9 @@ Test(my_strtok, string_with_mult_delim)
 Test(my_strtok, string_with_diff_delim)
 {
     char str[] = "Hello Coucou!Test:Epitech";
+    char *s = strdup(str);
     char *tok_1 = strtok(str, " !:");
-    char *tok_2 = my_strtok(str, " !:");
+    char *tok_2 = my_strtok(s, " !:");
 
      while (tok_1 && tok_2) {
         cr_assert_str_eq(tok_2, tok_1);
@@ -67,8 +70,9 @@ Test(my_strtok, string_with_diff_delim)
 Test(my_strtok, string_with_diff_mult_delim)
 {
     char str[] = "Hello ! :! Coucou!  ::!: :!!!Test! :! :! :: Epitech";
+    char *s = strdup(str);
     char *tok_1 = strtok(str, " !:");
-    char *tok_2 = my_strtok(str, " !:");
+    char *tok_2 = my_strtok(s, " !:");
 
      while (tok_1 && tok_2) {
         cr_assert_str_eq(tok_2, tok_1);
