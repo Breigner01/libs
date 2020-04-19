@@ -10,7 +10,7 @@ defaults:
 
 jobs:
   run_unit_tests:
-    name: Run Unit Tests 
+    name: Run Unit Tests
     runs-on: ubuntu-18.04
 
     steps:
