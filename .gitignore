@@ -1,0 +1,9 @@
+# Compilation Folders
+*.o
+bin
+
+# Editors Files and Folders
+.vscode
+.idea
+*~
+'#*#'
