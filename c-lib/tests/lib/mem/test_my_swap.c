@@ -7,10 +7,7 @@
 
 #pragma GCC diagnostic ignored "-Wincompatible-pointer-types"
 
-#include "tests.h"
-#include "mem.h"
-
-TestSuite(my_swap, .timeout=0.075);
+#include "test_my_swap.h"
 
 Test(my_swap, swap_int)
 {

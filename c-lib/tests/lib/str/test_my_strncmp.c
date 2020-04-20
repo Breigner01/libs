@@ -5,10 +5,7 @@
 ** tests
 */
 
-#include "tests.h"
-#include "str.h"
-
-TestSuite(my_strncmp, .timeout=0.05);
+#include "test_my_strncmp.h"
 
 Test(my_strncmp, compare_two_whole_identical_str)
 {

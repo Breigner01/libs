@@ -5,10 +5,7 @@
 ** tests
 */
 
-#include "tests.h"
-#include "str.h"
-
-TestSuite(my_strncpy, .timeout=0.05);
+#include "test_my_strncpy.h"
 
 Test(my_strncpy, copy_whole_str)
 {

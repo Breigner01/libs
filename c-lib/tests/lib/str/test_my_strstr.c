@@ -5,10 +5,7 @@
 ** tests
 */
 
-#include "tests.h"
-#include "str.h"
-
-TestSuite(my_strstr, .timeout=0.15);
+#include "test_my_strstr.h"
 
 Test(my_strstr, test_with_string_inside)
 {

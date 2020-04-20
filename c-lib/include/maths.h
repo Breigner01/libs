@@ -25,7 +25,7 @@
 **
 ** @return nb at power p
 *************************************************
-**/
+*/
 int my_compute_power_rec(int nb, int p);
 
 /****************************************************************************
@@ -39,7 +39,7 @@ int my_compute_power_rec(int nb, int p);
 **
 ** @return the square root of nb
 *****************************************************************************
-**/
+*/
 int my_compute_square_root(int nb);
 
 /******************************************************
@@ -52,7 +52,7 @@ int my_compute_square_root(int nb);
 **
 ** @return returns the smallest prime greater than nb
 *******************************************************
-**/
+*/
 int my_find_prime_sup(int nb);
 
 /*****************************************************
@@ -65,7 +65,7 @@ int my_find_prime_sup(int nb);
 **
 ** @return returns the number
 ******************************************************
-**/
+*/
 int my_getnbr(char const *str);
 
 /*************************************************************************
@@ -79,7 +79,7 @@ int my_getnbr(char const *str);
 **
 ** @return returns the binary number in a string
 **************************************************************************
-**/
+*/
 char *nb_to_bin(uint64_t nb);
 
 #endif /* !MATHS_H_ */

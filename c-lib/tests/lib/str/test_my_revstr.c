@@ -5,10 +5,7 @@
 ** tests
 */
 
-#include "tests.h"
-#include "str.h"
-
-TestSuite(my_resvstr, .timeout=0.05);
+#include "test_my_revstr.h"
 
 Test(my_revstr, rev_a_string)
 {

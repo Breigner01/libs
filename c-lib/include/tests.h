@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2019
-** printf
+** unit_tests
 ** File description:
 ** tests header
 */
@@ -25,7 +25,7 @@
 **
 ** @return nothing
 ***********************************************************
-**/
+*/
 void redirect_all_stdout(void);
 
 #endif /* !TESTS_H_ */

@@ -5,10 +5,7 @@
 ** tests
 */
 
-#include "tests.h"
-#include "str.h"
-
-TestSuite(my_strdup, .timeout=0.4);
+#include "test_my_strdup.h"
 
 Test(my_strdup, duplicate_str)
 {

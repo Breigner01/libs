@@ -5,10 +5,7 @@
 ** test
 */
 
-#include "tests.h"
-#include "mem.h"
-
-TestSuite(my_realloc, .timeout=0.075);
+#include "test_my_realloc.h"
 
 Test(my_realloc, str_reallocation)
 {

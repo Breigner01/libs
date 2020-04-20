@@ -5,10 +5,7 @@
 ** tests
 */
 
-#include "tests.h"
-#include "maths.h"
-
-TestSuite(nb_to_bin, .timeout=0.075);
+#include "test_nb_to_bin.h"
 
 Test(nb_to_bin, test_with_nb)
 {

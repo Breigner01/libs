@@ -5,10 +5,7 @@
 ** tests
 */
 
-#include "tests.h"
-#include "str.h"
-
-TestSuite(my_strlowcase, .timeout=0.1);
+#include "test_my_strlowcase.h"
 
 Test(my_strlowcase, uppercase_str)
 {

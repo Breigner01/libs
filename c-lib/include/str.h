@@ -19,7 +19,7 @@
 **
 ** @return the number of occurences of c in str
 **********************************************************************
-**/
+*/
 int char_counter(char const *str, char c);
 
 /*************************
@@ -32,7 +32,7 @@ int char_counter(char const *str, char c);
 **
 ** @return str reverserd
 **************************
-**/
+*/
 char *my_revstr(char *str);
 
 /******************************************************************************
@@ -47,7 +47,7 @@ char *my_revstr(char *str);
 **
 ** @return the concatenated string
 *******************************************************************************
-**/
+*/
 char *my_strcat(char *dest, char const *src);
 
 /************************************************************
@@ -62,7 +62,7 @@ char *my_strcat(char *dest, char const *src);
 ** @return 0 if the strings are the same 1 if s1[i] > s2[i]
 ** and -1 if s1[i] < s2[i]
 *************************************************************
-**/
+*/
 int my_strcmp(char const *s1, char const *s2);
 
 /*****************************************************************************
@@ -77,7 +77,7 @@ int my_strcmp(char const *s1, char const *s2);
 **
 ** @return dest which contains a copy of src
 ******************************************************************************
-**/
+*/
 char *my_strcpy(char *dest, char *str);
 
 /***************************************
@@ -90,7 +90,7 @@ char *my_strcpy(char *dest, char *str);
 **
 ** @return the duplicated string
 ****************************************
-**/
+*/
 char *my_strdup(char const *str);
 
 /******************************************
@@ -103,7 +103,7 @@ char *my_strdup(char const *str);
 **
 ** @return the length if str
 *******************************************
-**/
+*/
 int my_strlen(char const *str);
 
 /*******************************************************
@@ -116,7 +116,7 @@ int my_strlen(char const *str);
 **
 ** @return str in lowercase
 ********************************************************
-**/
+*/
 char *my_strlowcase(char *str);
 
 /*****************************************************************************
@@ -132,7 +132,7 @@ char *my_strlowcase(char *str);
 **
 ** @return dest containing the concatenated string
 ******************************************************************************
-**/
+*/
 char *my_strncat(char *dest, char const *src, int n);
 
 /************************************************************
@@ -148,7 +148,7 @@ char *my_strncat(char *dest, char const *src, int n);
 ** @return 0 if the strings are the same 1 if s1[i] > s2[i]
 ** and -1 if s1[i] < s2[i]
 *************************************************************
-**/
+*/
 int my_strncmp(char const *s1, char const *s2, int n);
 
 /********************************************************************
@@ -163,7 +163,7 @@ int my_strncmp(char const *s1, char const *s2, int n);
 **
 ** @return dest with the copied bytes from src
 *********************************************************************
-**/
+*/
 char *my_strncpy(char *dest, char const *src, int n);
 
 /******************************************************
@@ -177,7 +177,7 @@ char *my_strncpy(char *dest, char const *src, int n);
 **
 ** @return a pointer to the begining of substr in str
 *******************************************************
-**/
+*/
 char *my_strstr(char *str, char const *substr);
 
 /************************************************************
@@ -190,7 +190,7 @@ char *my_strstr(char *str, char const *substr);
 **
 ** @return str in uppercase
 *************************************************************
-**/
+*/
 char *my_strupcase(char *str);
 
 #endif /* !STR_H_ */

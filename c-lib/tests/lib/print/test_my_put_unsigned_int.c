@@ -5,10 +5,7 @@
 ** tests
 */
 
-#include "tests.h"
-#include "print.h"
-
-TestSuite(my_put_unsigned_int, .init=redirect_all_stdout, .timeout=0.075);
+#include "test_my_put_unsigned_int.h"
 
 Test(my_put_unsigned_int, test_with_int)
 {

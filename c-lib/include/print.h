@@ -27,7 +27,7 @@ enum letter {
 **
 ** @return the number of writen bytes (supposedly)
 *************************************************************************
-**/
+*/
 int my_printf(char *str, ...);
 
 /********************************************
@@ -40,7 +40,7 @@ int my_printf(char *str, ...);
 **
 ** @return nothing
 *********************************************
-**/
+*/
 void my_put_binary(uint64_t nb);
 
 /*************************************************
@@ -54,7 +54,7 @@ void my_put_binary(uint64_t nb);
 **
 ** @return nothing
 **************************************************
-**/
+*/
 void my_put_hexa(uint64_t nb, int letter);
 
 /************************************************************************
@@ -67,7 +67,7 @@ void my_put_hexa(uint64_t nb, int letter);
 **
 ** @return nothing
 *************************************************************************
-**/
+*/
 void my_put_hexa_min(uint64_t nb);
 
 /************************************************************************
@@ -80,7 +80,7 @@ void my_put_hexa_min(uint64_t nb);
 **
 ** @return nothing
 *************************************************************************
-**/
+*/
 void my_put_hexa_maj(uint64_t nb);
 
 /******************************************************************************
@@ -93,7 +93,7 @@ void my_put_hexa_maj(uint64_t nb);
 **
 ** @return nothing
 *******************************************************************************
-**/
+*/
 void my_put_address(uint64_t nb);
 
 /************************************
@@ -106,7 +106,7 @@ void my_put_address(uint64_t nb);
 **
 ** @return nothing
 *************************************
-**/
+*/
 void my_put_long_long(int64_t nb);
 
 /**********************************
@@ -119,7 +119,7 @@ void my_put_long_long(int64_t nb);
 **
 ** @return nothing
 ***********************************
-**/
+*/
 void my_put_long(long nb);
 
 /**********************************
@@ -132,7 +132,7 @@ void my_put_long(long nb);
 **
 ** @return nothing
 ***********************************
-**/
+*/
 void my_put_nbr(int nb);
 
 /*******************************************
@@ -145,7 +145,7 @@ void my_put_nbr(int nb);
 **
 ** @return nothing
 ********************************************
-**/
+*/
 void my_put_octal(uint64_t nb);
 
 /**********************************
@@ -158,7 +158,7 @@ void my_put_octal(uint64_t nb);
 **
 ** @return nothing
 ***********************************
-**/
+*/
 void my_put_short(short int nb);
 
 /**********************************************************************
@@ -171,7 +171,7 @@ void my_put_short(short int nb);
 **
 ** @return nothing
 ***********************************************************************
-**/
+*/
 void my_put_unprintable(char *str);
 
 /*************************************
@@ -184,7 +184,7 @@ void my_put_unprintable(char *str);
 **
 ** @return nothing
 **************************************
-**/
+*/
 void my_put_unsigned_int(unsigned int nb);
 
 /*****************************************
@@ -197,7 +197,7 @@ void my_put_unsigned_int(unsigned int nb);
 **
 ** @return nothing
 ******************************************
-**/
+*/
 void my_put_unsigned_long(unsigned long nb);
 
 /***********************************
@@ -210,7 +210,7 @@ void my_put_unsigned_long(unsigned long nb);
 **
 ** @return nothing
 ************************************
-**/
+*/
 void my_put_unsigned_short(unsigned short nb);
 
 /************************************
@@ -223,7 +223,7 @@ void my_put_unsigned_short(unsigned short nb);
 **
 ** @return nothing
 *************************************
-**/
+*/
 void my_putchar(const char c);
 
 /**********************************************
@@ -236,7 +236,7 @@ void my_putchar(const char c);
 **
 ** @return nothing
 ***********************************************
-**/
+*/
 void my_puterr(const char *str);
 
 /*********************************************
@@ -249,7 +249,7 @@ void my_puterr(const char *str);
 **
 ** @return nothing
 **********************************************
-**/
+*/
 void my_puts(char const *str);
 
 /************************************************
@@ -262,7 +262,7 @@ void my_puts(char const *str);
 **
 ** @return nothing
 *************************************************
-**/
+*/
 void my_putstr(const char *str);
 
 #endif /* !PRINT_H_ */

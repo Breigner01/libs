@@ -5,11 +5,7 @@
 ** test
 */
 
-#include "tests.h"
-
-int my_getnbr(char const *str);
-
-TestSuite(my_getnbr, .timeout=0.075);
+#include "test_my_getnbr.h"
 
 Test(my_getnbr, normal_number)
 {

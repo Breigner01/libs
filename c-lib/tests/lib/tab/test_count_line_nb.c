@@ -5,10 +5,7 @@
 ** count the number of \n (so of line) in an str
 */
 
-#include "tests.h"
-#include "tab.h"
-
-TestSuite(count_line_nb, .timeout=0.1);
+#include "test_count_line_nb.h"
 
 Test(count_line_nb, filled_str)
 {

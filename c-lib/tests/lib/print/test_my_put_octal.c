@@ -5,10 +5,7 @@
 ** tests
 */
 
-#include "tests.h"
-#include "print.h"
-
-TestSuite(my_put_octal, .init=redirect_all_stdout, .timeout=0.075);
+#include "test_my_put_octal.h"
 
 Test(my_put_octal, int_octal)
 {

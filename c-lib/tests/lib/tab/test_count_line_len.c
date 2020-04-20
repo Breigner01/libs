@@ -5,10 +5,7 @@
 ** count the len of the longest line
 */
 
-#include "tests.h"
-#include "tab.h"
-
-TestSuite(count_line_len, .timeout=0.05);
+#include "test_count_line_len.h"
 
 Test(count_line_len, filled_str)
 {

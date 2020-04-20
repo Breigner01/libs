@@ -5,14 +5,8 @@
 ** tests
 */
 
-#include <fcntl.h>
-#include <stdio.h>
-#include "tests.h"
-#include "get_next_line.h"
-#include "str.h"
+#include "test_get_next_line.h"
 
-TestSuite(get_next_line, .timeout=0.1);
-/*
 Test(get_next_line, read_a_file_line)
 {
     char *str = NULL;
@@ -31,4 +25,4 @@ Test(get_next_line, read_a_file_line)
     free(str);
     close(fd);
     fclose(stream);
-}*/
+}

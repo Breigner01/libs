@@ -5,10 +5,7 @@
 ** my_tablen
 */
 
-#include "tests.h"
-#include "tab.h"
-
-TestSuite(my_tablen, .timeout=0.1);
+#include "test_my_tablen.h"
 
 Test(my_tablen, classical_tab)
 {

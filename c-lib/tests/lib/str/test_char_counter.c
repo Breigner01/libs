@@ -5,10 +5,7 @@
 ** tests
 */
 
-#include "tests.h"
-#include "str.h"
-
-TestSuite(char_counter, .timeout=0.05);
+#include "test_char_counter.h"
 
 Test(char_counter, char_in_str)
 {

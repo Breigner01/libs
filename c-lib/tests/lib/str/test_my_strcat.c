@@ -5,10 +5,7 @@
 ** tests
 */
 
-#include "tests.h"
-#include "str.h"
-
-TestSuite(my_strcat, .timeout=0.05);
+#include "test_my_strcat.h"
 
 Test(my_strcat, cat_2_str)
 {

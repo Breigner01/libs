@@ -5,10 +5,7 @@
 ** tests
 */
 
-#include "tests.h"
-#include "print.h"
-
-TestSuite(my_printf, .init=redirect_all_stdout, .timeout=0.075);
+#include "test_my_printf.h"
 
 Test (my_printf, prints_int_i)
 {

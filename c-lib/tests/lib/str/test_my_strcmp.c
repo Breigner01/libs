@@ -5,10 +5,7 @@
 ** tests
 */
 
-#include "tests.h"
-#include "str.h"
-
-TestSuite(my_strcmp, .timeout=0.05);
+#include "test_my_strcmp.h"
 
 Test(my_strcmp, identical_strings)
 {

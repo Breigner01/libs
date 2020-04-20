@@ -5,10 +5,7 @@
 ** test
 */
 
-#include "tests.h"
-#include "mem.h"
-
-TestSuite(my_reallocarray, .timeout=0.075);
+#include "test_my_reallocarray.h"
 
 Test(my_reallocarray, classical_reallocation)
 {

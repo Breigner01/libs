@@ -5,11 +5,7 @@
 ** unit tests
 */
 
-#include "tests.h"
-
-int my_compute_power_rec(int nb, int p);
-
-TestSuite(my_compute_power_rec, .timeout=0.075);
+#include "test_my_compute_power_rec.h"
 
 Test(my_compute_power_rec, power_1)
 {

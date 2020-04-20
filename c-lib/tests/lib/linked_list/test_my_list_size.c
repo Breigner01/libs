@@ -5,10 +5,7 @@
 ** tests
 */
 
-#include "tests.h"
-#include "linked_list.h"
-
-TestSuite(my_list_size, .timeout=0.075);
+#include "test_my_list_size.h"
 
 Test(my_list_size, classical_ll)
 {

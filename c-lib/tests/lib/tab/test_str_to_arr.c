@@ -5,10 +5,7 @@
 ** str_to_arr
 */
 
-#include "tests.h"
-#include "tab.h"
-
-TestSuite(str_to_arr, .timeout=0.1);
+#include "test_str_to_arr.h"
 
 Test(str_to_arr, classical_str)
 {

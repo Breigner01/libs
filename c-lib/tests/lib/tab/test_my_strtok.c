@@ -5,10 +5,7 @@
 ** test
 */
 
-#include "tests.h"
-#include "tab.h"
-
-TestSuite(my_strtok, .timeout=0.1);
+#include "test_my_strtok.h"
 
 Test(my_strtok, classical_string)
 {

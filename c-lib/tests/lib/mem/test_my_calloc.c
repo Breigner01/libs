@@ -5,10 +5,7 @@
 ** test
 */
 
-#include "tests.h"
-#include "mem.h"
-
-TestSuite(my_calloc, .timeout=0.1);
+#include "test_my_calloc.h"
 
 Test(my_calloc, test_without_0)
 {

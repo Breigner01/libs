@@ -5,10 +5,7 @@
 ** tests
 */
 
-#include "tests.h"
-#include "linked_list.h"
-
-TestSuite(my_params_to_list, .timeout=0.075);
+#include "test_my_params_to_list.h"
 
 Test(my_params_to_list, classical_arr)
 {

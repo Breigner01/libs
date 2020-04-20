@@ -23,7 +23,7 @@
 **
 ** @return the allocated pointer
 ***************************************************************************
-**/
+*/
 void *my_calloc(int nmemb, size_t size);
 
 /******************************************************************************
@@ -39,7 +39,7 @@ void *my_calloc(int nmemb, size_t size);
 **
 ** @return the pointer s once filled
 *******************************************************************************
-**/
+*/
 void *my_memset(void *s, int c, size_t n);
 
 /******************************************************************************
@@ -57,7 +57,7 @@ void *my_memset(void *s, int c, size_t n);
 **
 ** @return the reallocated pointer
 *******************************************************************************
-**/
+*/
 void *my_realloc(void *ptr, size_t nmemb, size_t size);
 
 /******************************************************************************
@@ -75,7 +75,7 @@ void *my_realloc(void *ptr, size_t nmemb, size_t size);
 **
 ** @return the reallocated pointer
 *******************************************************************************
-**/
+*/
 void *my_reallocarray(void *ptr, size_t nmemb, size_t size);
 
 /******************************************************************************
@@ -89,7 +89,7 @@ void *my_reallocarray(void *ptr, size_t nmemb, size_t size);
 **
 ** @return nothing
 *******************************************************************************
-**/
+*/
 void my_swap(int *a, int *b);
 
 #endif /* !MEM_H_ */

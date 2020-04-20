@@ -5,11 +5,7 @@
 ** test
 */
 
-#include "tests.h"
-
-int my_compute_square_root(int nb);
-
-TestSuite(my_compute_square_root, .timeout=0.075);
+#include "test_my_compute_square_root.h"
 
 Test(my_compute_square_root, perfect_square)
 {

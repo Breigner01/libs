@@ -18,7 +18,7 @@
 **
 ** @return the length of the longest line
 *******************************************
-**/
+*/
 int count_line_len(const char *str);
 
 /*******************************************
@@ -31,7 +31,7 @@ int count_line_len(const char *str);
 **
 ** @return the number of lines in str
 ********************************************
-**/
+*/
 int count_line_nb(const char *str);
 
 /*******************************************************************************
@@ -47,7 +47,7 @@ int count_line_nb(const char *str);
 **
 ** @return a pointer to the next token or null if there are no more tokens
 ********************************************************************************
-**/
+*/
 char *my_strtok(char *str, char const *delim);
 
 /*********************************************************************
@@ -60,7 +60,7 @@ char *my_strtok(char *str, char const *delim);
 **
 ** @return the number of strings in the given array
 **********************************************************************
-**/
+*/
 int my_tablen(char **tab);
 
 /***************************************************************************
@@ -75,7 +75,7 @@ int my_tablen(char **tab);
 **
 ** @return the array containing the tokens
 ****************************************************************************
-**/
+*/
 char **str_to_arr(char *str, char *delim);
 
 #endif /* !TAB_H_ */

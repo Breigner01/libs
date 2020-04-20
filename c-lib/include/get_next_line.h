@@ -25,7 +25,7 @@
 **
 ** @return the line that has been read
 *******************************************
-**/
+*/
 char *get_next_line(int fd);
 
 #endif /* !GET_NEXT_LINE_H_ */

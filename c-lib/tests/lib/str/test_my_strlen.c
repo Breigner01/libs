@@ -5,10 +5,7 @@
 ** tests
 */
 
-#include "tests.h"
-#include "str.h"
-
-TestSuite(my_strlen, .timeout=0.03);
+#include "test_my_strlen.h"
 
 Test(my_strlen, normal_str)
 {

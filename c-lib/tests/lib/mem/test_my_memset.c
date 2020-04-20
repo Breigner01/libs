@@ -5,10 +5,7 @@
 ** test
 */
 
-#include "tests.h"
-#include "mem.h"
-
-TestSuite(my_memset, .timeout=0.075);
+#include "test_my_memset.h"
 
 Test(my_memset, fill_array_with_0)
 {

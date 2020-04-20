@@ -26,7 +26,7 @@ typedef struct linked_list_s {
 **
 ** @return the number of nodes
 *******************************************************
-**/
+*/
 int my_list_size(linked_list_t const *begin);
 
 /*********************************************
@@ -39,7 +39,7 @@ int my_list_size(linked_list_t const *begin);
 **
 ** @return a pointer to the new node
 **********************************************
-**/
+*/
 linked_list_t *my_set_list(linked_list_t *l_list, void *data);
 
 /**************************************************************
@@ -52,7 +52,7 @@ linked_list_t *my_set_list(linked_list_t *l_list, void *data);
 **
 ** @return nothing
 ***************************************************************
-**/
+*/
 void my_rev_list(linked_list_t **begin);
 
 /***************************************************************
@@ -66,7 +66,7 @@ void my_rev_list(linked_list_t **begin);
 **
 ** @return a linked list filled with the content of av
 ****************************************************************
-**/
+*/
 linked_list_t *my_params_to_list(int ac, char *const *av);
 
 #endif /* !LINKED_LIST_H_ */
