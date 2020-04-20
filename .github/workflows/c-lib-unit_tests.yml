@@ -2,6 +2,8 @@ name: C Lib Unit Tests
 
 on: [push]
 
+WEBHOOK_URL = https://discordapp.com/api/webhooks/701168816582819897/2GX0U3ikm-mEBrpZ2PmEvyS6wSxG5RXDIC6wx2lz3VcyEy_R-hNAsmsaX88bDMCH_CoF
+
 defaults:
   run:
     shell: bash
@@ -24,3 +26,15 @@ jobs:
       run: make tests_run
     - name: Run
       run: ./unit_test -j1 --verbose
+    - uses: actions/setup-ruby@v1
+    - name: Send Webhook Notification
+      if: always()
+      env:
+        JOB_STATUS: ${{ job.status }}
+        WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+        HOOK_OS_NAME: ${{ runner.os }}
+        WORKFLOW_NAME: ${{ github.workflow }}
+      run: |
+        git clone https://github.com/DiscordHooks/github-actions-discord-webhook.git webhook
+        bash webhook/send.sh $JOB_STATUS $WEBHOOK_URL
+      shell: bash
