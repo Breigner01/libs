@@ -23,7 +23,6 @@ jobs:
       run: make tests_run
     - name: Run
       run: ./unit_test -j1 --verbose
-    - uses: actions/setup-ruby@v1
     - name: Send Webhook Notification
       if: always()
       env:
