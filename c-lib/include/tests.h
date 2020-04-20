@@ -16,14 +16,14 @@
 #include <stddef.h>
 
 /**********************************************************
- * \author Benjamin R.
- * \file redirect_all_stdout.c
+ * @author Benjamin R.
+ * @file redirect_all_stdout.c
  *
- * \brief redirects stdout and stderr for criterion tests
+ * @brief redirects stdout and stderr for criterion tests
  *
- * \param none
+ * @param none
  *
- * \return nothing
+ * @return nothing
  **********************************************************
  */
 void redirect_all_stdout(void);

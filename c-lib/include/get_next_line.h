@@ -16,16 +16,16 @@
 #include <stdio.h>
 
 /******************************************
- * \author Benjamin R.
- * \file get_next_line.c
- *
- * \brief reads an entire line from fd
- *
- * \param fd: file descriptor of the file
- *
- * \return the line that has been read
- ******************************************
- */
+** @author Benjamin R.
+** @file get_next_line.c
+**
+** @brief reads an entire line from fd
+**
+** @param fd: file descriptor of the file
+**
+** @return the line that has been read
+*******************************************
+**/
 char *get_next_line(int fd);
 
 #endif /* !GET_NEXT_LINE_H_ */
