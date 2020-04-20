@@ -2,13 +2,10 @@ name: C Lib Unit Tests
 
 on: [push]
 
-WEBHOOK_URL = https://discordapp.com/api/webhooks/701168816582819897/2GX0U3ikm-mEBrpZ2PmEvyS6wSxG5RXDIC6wx2lz3VcyEy_R-hNAsmsaX88bDMCH_CoF
-
 defaults:
   run:
     shell: bash
     working-directory: c-lib
-
 
 jobs:
   run_unit_tests:
