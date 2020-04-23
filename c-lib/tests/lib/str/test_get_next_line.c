@@ -11,16 +11,21 @@ Test(get_next_line, read_a_file_line)
 {
     char *str = NULL;
     size_t n = 0;
+    ssize_t ret = 0;
     int fd = open("tests/lib/str/test_get_next_line.c", O_RDONLY);
     FILE *stream = fopen("tests/lib/str/test_get_next_line.c", "r");
 
-    getline(&str, &n, stream);
+    ret = getline(&str, &n, stream);
+    str[ret - 1] = '\0';
     cr_assert_str_eq(get_next_line(fd), str);
-    getline(&str, &n, stream);
+    ret = getline(&str, &n, stream);
+    str[ret - 1] = '\0';
     cr_assert_str_eq(get_next_line(fd), str);
-    getline(&str, &n, stream);
+    ret = getline(&str, &n, stream);
+    str[ret - 1] = '\0';
     cr_assert_str_eq(get_next_line(fd), str);
-    getline(&str, &n, stream);
+    ret = getline(&str, &n, stream);
+    str[ret - 1] = '\0';
     cr_assert_str_eq(get_next_line(fd), str);
     free(str);
     close(fd);
