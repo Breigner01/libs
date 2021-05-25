@@ -5,6 +5,7 @@
 ** reverse the order of the arguments in the linked list
 */
 
+#include <stdio.h>
 #include "linked_list.h"
 
 void my_rev_list(linked_list_t **head)
@@ -20,5 +21,6 @@ void my_rev_list(linked_list_t **head)
         linked_list = next;
     }
     linked_list->next = prev;
-    *head = linked_list;
+    *head = linked_list->next;
+    free(linked_list);
 }

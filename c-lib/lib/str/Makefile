@@ -6,7 +6,7 @@
 ##
 
 CFLAGS		=	-Wall -Wextra
-CPPFLAGS	=	-I ../../include/
+CPPFLAGS	=	-iquote ../../include/
 
 SRC			=	char_counter.c		\
 				get_next_line.c		\
@@ -33,7 +33,7 @@ $(NAME):	$(OBJ)
 	ar rc $(NAME) $(OBJ)
 	cp $(NAME) ../
 
-debug:		CFLAGS	+=	-g3
+debug:		CFLAGS	+=	-ggdb3
 debug:		$(NAME)
 
 clean:

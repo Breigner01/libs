@@ -21,7 +21,7 @@ Test(my_rev_list, rev_linked_list)
     linked_list = start;
     my_rev_list(&linked_list);
     for (int i = 9; i >= 0; i--) {
-        cr_assert_eq(linked_list->data, i * 21);
+        cr_assert_eq((size_t)linked_list->data, i * 21);
         linked_list = linked_list->next;
     }
 }

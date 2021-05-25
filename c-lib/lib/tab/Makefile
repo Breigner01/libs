@@ -7,7 +7,7 @@
 
 CFLAGS		=	-Wall -Wextra
 
-CPPFLAGS	=	-I ../../include/
+CPPFLAGS	=	-iquote ../../include/
 
 SRC			=	count_line_len.c			\
 				count_line_nb.c				\
@@ -27,7 +27,7 @@ $(NAME):	$(OBJ)
 	ar rc $(NAME) $(OBJ)
 	cp $(NAME) ../
 
-debug:		CFLAGS	+=	-g3
+debug:		CFLAGS	+=	-ggdb3
 debug:		$(NAME)
 
 clean:

@@ -1,10 +1,25 @@
 # Compilation Folders
+
 *.a
 *.o
+*.gcno
+*.gcda
 bin
+unit_test
 
 # Editors Files and Folders
+
 .vscode
 .idea
 *~
-'#*#'
+\#*#
+*.swp
+
+# Cmake Build Files
+
+cmake-build-*
+CMakeLists.txt
+
+# Coverage Files
+
+coverage/

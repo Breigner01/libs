@@ -7,11 +7,10 @@
 
 CFLAGS		=	-Wall -Wextra --coverage
 
-CPPFLAGS	=	-I ../include/ -I include/linked_list -I include/maths -I include/mem -I include/print -I include/str -I include/tab
+CPPFLAGS	=	-iquote ../include/ -iquote include/linked_list -iquote include/maths -iquote include/mem \
+				-iquote include/print -iquote include/str -iquote include/tab
 
-LDFLAGS		=	-lcriterion
-
-UTFLAGS		=	--coverage
+LDLIBS		=	-lcriterion
 
 CC			?=	gcc
 
@@ -124,9 +123,9 @@ NAME	=	unit_test
 all:	$(NAME)
 
 $(NAME):	$(OBJ)
-	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS) $(UTFLAGS)
+	$(CC) -o $(NAME) $(OBJ) $(LDLIBS) --coverage
 
-debug: CFLAGS += -g3
+debug: CFLAGS += -ggdb3
 debug: $(NAME)
 
 clean:

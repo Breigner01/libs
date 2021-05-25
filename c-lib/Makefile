@@ -5,7 +5,9 @@
 ## make
 ##
 
-CPPFLAGS	=	-I include/
+MAKEFLAGS	+=	--no-print-directory
+
+CPPFLAGS	=	-iquote include/
 
 CFLAGS		=	-Wall -Wextra
 
@@ -28,39 +30,39 @@ HTMLCOVER	=	coverage/coverage.html
 all:	$(NAME)
 
 $(NAME): $(OBJ)
-	@echo "\e[38;5;46mBUILDING LIB\e[0m"
+	@echo -e "\e[38;5;46mBUILDING LIB\e[0m"
 	@make -s -C lib/
 	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS)
 
-debug: CFLAGS += -g3
+debug: CFLAGS += -ggdb3
 debug: $(OBJ)
-	@echo "\e[38;5;46mBUILDING LIB IN DEGBUG MODE\e[0m"
+	@echo -e "\e[38;5;46mBUILDING LIB IN DEBUG MODE\e[0m"
 	@make debug -s -C lib/
 	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS)
-	@echo "\e[38;5;196mBUILT IN DEBUG MODE\e[0m"
+	@echo -e "\e[38;5;196mBUILT IN DEBUG MODE\e[0m"
 
 tests_run:
-	@echo "\e[38;5;208mBUILDING UNIT TESTS\e[0m"
+	@echo -e "\e[38;5;208mBUILDING UNIT TESTS\e[0m"
 	@make -s -C tests/
 	@cp tests/unit_test .
 	@-mkdir $(COVERAGE)
 	gcovr --exclude tests/ --html --html-details -o $(HTMLCOVER)
 
 tests_run_debug:
-	@echo "\e[38;5;208mBUILDING UNIT TESTS IN DEBUG MODE\e[0m"
+	@echo -e "\e[38;5;208mBUILDING UNIT TESTS IN DEBUG MODE\e[0m"
 	@make debug -s -C tests/
 	@cp tests/unit_test .
 	@-mkdir $(COVERAGE)
 	gcovr --exclude tests/ --html --html-details -o $(HTMLCOVER)
 
 clean:
-	@echo "\e[38;5;196mREMOVING OBJECT FILES\e[0m"
+	@echo -e "\e[38;5;196mREMOVING OBJECT FILES\e[0m"
 	@$(RM) $(OBJ)
 	@make clean -s -C lib/
 	@make clean -s -C tests/
 
 fclean: clean
-	@echo "\e[38;5;196mREMOVING BINARIES\e[0m"
+	@echo -e "\e[38;5;196mREMOVING BINARIES\e[0m"
 	@$(RM) $(NAME) $(COVERAGE)
 	@make fclean -s -C lib/
 	@make fclean -s -C tests/
